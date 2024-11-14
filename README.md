@@ -98,12 +98,32 @@ scrapy crawl nba_draft_spider -o data/draft_data.csv
 ## 📊 Data Collection
 
 ### Sample Data Structure
-| Category | Description | Example | Learning Notes |
-|----------|-------------|---------|----------------|
-| `draft_year` | Year drafted | 2023 | Basic scraping |
-| `player_stats` | Season averages | 15.5 PPG | Multi-page handling |
-| `team_history` | Team changes | GSW → LAL | Data cleaning |
-| `advanced_metrics` | Advanced stats | 18.2 PER | Complex queries |
+### Sample Data Structure
+| Column Name          | Description                            | Example     |
+|----------------------|----------------------------------------|-------------|
+| `player_id`          | Unique identifier for each player      | `1`         |
+| `draft_year`         | Year the player was drafted            | `1995`      |
+| `draft_round`        | Round in which the player was drafted  | `1`         |
+| `draft_pick`         | Overall pick number in the draft       | `5`         |
+| `team_drafted_by`    | Team that initially drafted the player | `GSW`       |
+| `player_name`        | Name of the player                     | `Kevin Garnett` |
+| `season_year`        | Season for the player’s stats          | `2004-05`   |
+| `team`               | Team for the season                    | `MIN`       |
+| `age`                | Player’s age during the season         | `28`        |
+| `position`           | Position played during the season      | `PF`        |
+| `games_played`       | Number of games played                 | `82`        |
+| `games_started`      | Number of games started                | `82`        |
+| `minutes_per_game`   | Average minutes per game               | `38.1`      |
+| `points_per_game`    | Points scored per game                 | `22.2`      |
+| `rebounds_per_game`  | Rebounds per game                      | `13.5`      |
+| `assists_per_game`   | Assists per game                       | `5.7`       |
+| `steals_per_game`    | Steals per game                        | `1.5`       |
+| `blocks_per_game`    | Blocks per game                        | `1.4`       |
+| `field_goal_percentage` | Field goal percentage             | `0.502`     |
+| `three_point_percentage` | 3-point shooting percentage      | `0.240`     |
+| `free_throw_percentage`  | Free throw percentage             | `0.811`     |
+| `advanced_metrics`   | Advanced stats (e.g., PER, WS)         | `22.5 PER`  |
+| `awards`             | Awards received during the season      | `MVP, All-NBA First Team` |
 
 ## 📚 Learning Journey
 
